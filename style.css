@@ -1,0 +1,70 @@
+body{
+    background: url(OIP.jpeg);
+}
+
+#ex{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    height: 300px;
+    padding: 30px;
+    background-color: rgba(0, 0,0,0.6);
+    border-radius: 20px;
+}
+
+#h1tag{
+    color: aliceblue;
+}
+
+#guessnumber{
+    font-size: 1rem;
+    font-weight: bolder;
+    text-align: center;
+    width: 100px;
+    height: 30px;
+    border-radius: 10px;
+    margin-left: 70px;
+    background-color: aqua;
+}
+
+#btn{
+    margin-left: 95px;
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    font-weight: bolder;
+}
+
+#score{
+    color: aliceblue;
+}
+
+#tryagain{
+    color: aliceblue;
+}
+
+#result{
+    color: aliceblue;
+    background-color: rgba(0, 0,0,0.6);
+    width: 50px;
+    height: 20px;
+    text-align: center;
+    font-weight: bolder;
+}
+
+#scoredisp{
+    color: aliceblue;
+    margin-left: 70px;
+}
+
+#btn:hover{
+    cursor: pointer;
+    background-color: aqua;
+    box-shadow: 1px 1px 10px 1px aqua;
+}
+
+#guessnumber:hover{
+    border-color:  rgb(15, 224, 224);
+    background-color: aliceblue;
+}

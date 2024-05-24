@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div id="ex">
+    <h1 id="h1tag">Guess the Number</h1>
+    <input type="text" id="guessnumber"><br>
+    <button id="btn" onclick="check()">Guess</button>
+    <p id="result"></p>
+    <p id="score">Chances : 10</p>
+    <p id="tryagain"></p>
+    <p id="scoredisp"></p>
+</div>
+    <script>
+        var guessnumber=document.getElementById("guessnumber")
+        var result=document.getElementById("result")
+        var scores=document.getElementById("score")
+        var ta=document.getElementById("tryagain")
+        var sd=document.getElementById("scoredisp")
+        var randnum=Math.floor(Math.random()*10)+1
+        var scores=10
+        function check(){
+            var enterednumber = guessnumber.value
+            if(randnum==enterednumber)
+            {
+                result.textContent="Right!"
+                sd.textContent="Your Score is : "+scores
+            }
+            else{
+                scores=scores-1
+                score.textContent="Available Chances : "+scores
+                result.textContent="Wrong!"
+            }
+            if(scores==0)
+            {
+                alert(ta.textContent="Refresh and Try Again")
+            }
+            if(scores==10)
+            {
+                alert(ta.textContent="WoW You've Done it in Your 1st Attempt")
+            }
+        }
+    </script>
+</body>
+</html>
